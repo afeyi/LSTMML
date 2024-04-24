@@ -1,0 +1,25 @@
+{
+    "name": "Hate Speech Detection Extension",
+    "description": "A Chrome extension that predicts whether a statement is considered to be Hate Speech or Not HateSpeech",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+      "16": "img/shutterstock_712486300-web (2).jpeg"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+      "http://127.0.0.1:5000/"
+    ],
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.js"],
+        "matches": ["http://*/*", "https://*/*"]
+      }
+    ]
+  }

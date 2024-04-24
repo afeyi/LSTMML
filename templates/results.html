@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .result-hatespeech {
+            color: red;
+        }
+        .result-nothatespeech {
+            color: green;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div id="prediction">{{ prediction }}</div>
+        <button onclick="window.location.href='/';">Try Another Text</button>
+    </div>
+    <h1>Results</h1>
+    <p>Text: {{ text }}</p> <!-- Display the passed text variable -->
+    <p>Result: {{ result }}</p> <!-- Display the passed result variable -->
+    <script>
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var prediction = "{{ prediction }}";
+        //     var resultDiv = document.getElementById('prediction');
+        //     if (prediction === 'Hate Speech Detected') {
+        //         resultDiv.classList.add('result-hatespeech');
+        //     } else {
+        //         resultDiv.classList.add('result-nothatespeech');
+        //     }
+        // });
+    </script>
+</body>
+</html>
