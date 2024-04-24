@@ -10,7 +10,7 @@
       "default_popup": "popup.html"
     },
     "host_permissions": [
-      "http://127.0.0.1:5000/"
+      "https://lstmmodel-3d4b7db20769.herokuapp.com/"
     ],
     "permissions": [
       "activeTab",
