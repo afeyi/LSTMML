@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const resultDiv = document.getElementById('prediction');
 
       try {
-          const response = await fetch('http://127.0.0.1:5000', { 
+          const response = await fetch('https://lstmmodel-3d4b7db20769.herokuapp.com/', { 
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
